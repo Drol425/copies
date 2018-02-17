@@ -12,31 +12,28 @@ switch ($_GET['mid']){
 default:
 ?>
 <div style="text-align: center;">
-	<form action="reg.php?mid=reg" method="POST">
+	<form action="reg.php?mid=aut" method="POST">
 		Email:<br /> <input name="email" size="40" type="text"><br /><br />
 		Пароль:<br /> <input name="password" size="40" type="password"><br /><br />
-		Повторите пароль:<br /> <input name="password1" size="40" type="password"><br /><br />
-		<input name="subm" value="Зарегестрироваться" type="submit">
+		<input name="subm" value="Войти" type="submit">
 	</form>
 </div>
 
 <?php
 break;
 
-case 'reg':
+case 'aut':
 	
-	//$user_copy  //проверяем на копию емаила
+	//$user and $password md5 с базы данных вывод по емаилу юзера
 	
-	if($user_copy){
+	if($pass != md5($_POST['password'])){
 		echo "Извините, но данный пользователь зарегестрирован!<br />";
 		echo "<a href='reg.php'>назад</a><br />";
 		break;
 	}
-	if($_POST['password'] != $_POST['password1']){
-		echo "Пароли не совпадают! <br />";
-		break;
+	else{
+		echo "Успешно авторизировались. <a href='enter.php'>Войти</a><br />";
 	}
-	//делаем запрос в базу данных для добавления нового юзера свойством объекта
 	
 break;
 	
@@ -48,7 +45,6 @@ break;
 <br />
 <br />
 <br />
-
 <?php
 include ('class/footer.class.php');
 ?>
