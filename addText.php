@@ -33,20 +33,31 @@ default:
 break;
 
 case 'add':
-	
-	//$user_copy  //проверяем на копию емаила
-	echo"<br />
+echo"<br />
 <br />
 <br />
 <br />";
-	if($_POST['name']){
-		$obj = new AddText();
+
+	if($_POST['title']){
+		echo 'Не введен Заголовок!';
+		exit;
+	}
+	if($_POST['exect']){
+		echo 'Не введено Краткое описание!';
+		exit;
+	}
+	if($_POST['text']){
+		echo 'Не введен Текст!';
+		exit;
+	}
+	if($_POST['cena']){
+		echo 'Не введена Цена!';
+		exit;
+	}
+	$obj = new AddText();
 	$obj -> addTextfun($_POST['title'], $_POST['exect'], $_POST['text'], $_POST['cena']);
 	echo "Успешно добавлено!<a href='index.php'> перейти</a><br />";
-	}
-	else{
-		echo "Ошибка!";
-	}
+
 	
 break;
 	

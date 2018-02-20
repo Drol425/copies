@@ -1,5 +1,6 @@
 <?php
 include  ('class/header.class.php');
+include  ('class/reg.class.php');
 ?>
 <br />
 <br />
@@ -36,6 +37,8 @@ case 'reg':
 		echo "Пароли не совпадают! <br />";
 		break;
 	}
+	$obj = new  regUser();
+	$obj -> RegUsers($_POST['email'],$_POST['password']);
 	//делаем запрос в базу данных для добавления нового юзера свойством объекта
 	
 break;
