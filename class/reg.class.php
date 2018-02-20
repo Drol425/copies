@@ -10,5 +10,13 @@ class regUser{
 		
 		
 	}
+	public function provUser($name){
+		
+		$db = new PDO('mysql:host=localhost;dbname=1234', '1234', '1234');
+		$view = $db->query("SELECT * FROM `users` WHERE `login` = '$name'");
+		$count = $view->rowCount();
+		return $count;
+		
+	}
 	
 }

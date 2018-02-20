@@ -25,8 +25,9 @@ default:
 break;
 
 case 'reg':
+	$obj = new regUser();
 	
-	//$user_copy  //проверяем на копию емаила
+	echo $user_copy = $obj ->provUser($_POST['email']);
 	
 	if($user_copy){
 		echo "Извините, но данный пользователь зарегестрирован!<br />";
@@ -37,8 +38,8 @@ case 'reg':
 		echo "Пароли не совпадают! <br />";
 		break;
 	}
-	$obj = new  regUser();
-	$obj -> RegUsers($_POST['email'],$_POST['password']);
+	echo $obj -> RegUsers($_POST['email'],$_POST['password']);
+	echo "Успешно зарегестрировано!";
 	//делаем запрос в базу данных для добавления нового юзера свойством объекта
 	
 break;
