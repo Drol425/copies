@@ -9,18 +9,11 @@ include ('class/header.class.php');
     <!-- ******PROMO****** -->
     <section id="promo" class="promo section offset-header">
         <div class="container text-center">
-            <h2 class="title">dev<span class="highlight">Aid</span></h2>
-            <p class="intro">A free mobile-friendly Bootstrap theme designed to help developers
-promote their personal projects</p>
+            <h2 class="title">Копи<span class="highlight">Райтинг</span></h2>
+            <p class="intro">Дешевые и уникальные статьи для тех кто хочет наполнить свой сайт контентом</p>
             <div class="btns">
-                <a class="btn btn-cta-secondary" href="http://themes.3rdwavemedia.com/" target="_blank">Demo</a>
-                <a class="btn btn-cta-primary" href="http://themes.3rdwavemedia.com/website-templates/devaid-free-bootstrap-theme-developers/" target="_blank">Download</a>
+                <a class="btn btn-cta-primary" href="reg.php" target="_blank">Начать</a><br /><br />
             </div>
-            <ul class="meta list-inline">
-                <li><a href="https://github.com/xriley/devAid-Theme" target="_blank">View on GitHub</a></li>
-                <li><a href="http://themes.3rdwavemedia.com/website-templates/devaid-free-bootstrap-theme-developers/" target="_blank">Full Documentation</a></li>
-                <li>Created by: <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> at 3rd Wave Media</li>
-            </ul><!--//meta-->
         </div><!--//container-->
         <div class="social-media">
             <div class="social-media-inner container text-center">
@@ -50,7 +43,7 @@ promote their personal projects</p>
     <!-- ******ABOUT****** --> 
     <section id="about" class="about section">
         <div class="container">
-            <h2 class="title text-center">What is devAid?</h2>
+            <h2 class="title text-center">Чем уникальна биржа?</h2>
             <p class="intro text-center">Explain your project in detail. Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
             <div class="row">
                 <div class="item col-md-4 col-sm-6 col-xs-12">
@@ -115,15 +108,14 @@ promote their personal projects</p>
     <!-- ******FEATURES****** --> 
     <section id="features" class="features section">
         <div class="container text-center">
-            <h2 class="title">Features</h2>
+            <h2 class="title">Особенности</h2>
             <ul class="feature-list list-unstyled">
-                <li><i class="fa fa-check"></i> Fully responsive</li>
-                <li><i class="fa fa-check"></i> HTML5 + CSS3</li>
-                <li><i class="fa fa-check"></i> Built on <a href="http://getbootstrap.com/" target="_blank">Bootstrap 3.3</a></li>
-                <li><i class="fa fa-check"></i> 400+ FontAwesome icons</li>
-                <li><i class="fa fa-check"></i> 4 colour schemes</li>
-                <li><i class="fa fa-check"></i> LESS files included</li>
-                <li><i class="fa fa-check"></i> Compatible with all modern browsers</li>
+                <li><i class="fa fa-check"></i> Уникальность</li>
+                <li><i class="fa fa-check"></i> Качестввенные статьи</li>
+                <li><i class="fa fa-check"></i> Дешевизна </li>
+                <li><i class="fa fa-check"></i> Актуальность</li>
+                <li><i class="fa fa-check"></i> Пунктуальность</li>
+                <li><i class="fa fa-check"></i> Доступность</li>
             </ul>
         </div><!--//container-->
     </section><!--//features-->

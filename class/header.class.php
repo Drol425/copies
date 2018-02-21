@@ -44,7 +44,7 @@
         <div class="container">            
             <h1 class="logo pull-left">
                 <a class="scrollto" href="#promo">
-                    <span class="logo-title">devAid</span>
+                    <span class="logo-title">КопиРайтинг</span>
                 </a>
             </h1><!--//logo-->              
             <nav id="main-nav" class="main-nav navbar-right" role="navigation">
@@ -58,9 +58,9 @@
                 </div><!--//navbar-header-->            
                 <div class="navbar-collapse collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#features">Features</a></li>
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Главная</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#about">О нас</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#features">Особенности</a></li>
                         <li class="nav-item"><a class="scrollto" href="#docs">Docs</a></li>
                         <li class="nav-item"><a class="scrollto" href="#license">License</a></li>                        
                         <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
