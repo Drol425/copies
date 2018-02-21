@@ -69,3 +69,6 @@
             </nav><!--//main-nav-->
         </div>
     </header><!--//header-->
+<?php
+    $user = 'Drol';
+?>
