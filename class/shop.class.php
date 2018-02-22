@@ -14,7 +14,7 @@ class shop{
 		echo "</table></center>";
  
 	}
-    public function shopSale($id, $user, $moneyUser){
+    public function shopSale($id, $user){
         $db = new PDO('mysql:host=localhost;dbname=1234', '1234', '1234');
         $saleView = $db->query("SELECT * FROM `Text` WHERE id = '$id'");
         foreach($saleView as $row)
@@ -22,6 +22,11 @@ class shop{
             $title = $row['title'];
             $cena = $row['summa'];
         }
+
+			$db->query("SELECT * FROM `users` WHERE login = '$user'");
+			foreach($saleView as $rows){
+               $moneyUser = $rows['money'];
+            }
         if($moneyUser >= $cena){
             echo "Успешно куплено!";
         }
