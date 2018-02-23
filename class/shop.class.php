@@ -19,6 +19,7 @@ class shop{
         $saleView = $db->query("SELECT * FROM `Text` WHERE id = '$id'");
         foreach($saleView as $row)
         {
+            $textId = $row['id'];
             $title = $row['title'];
             $cena = $row['summa'];
         }
@@ -28,6 +29,9 @@ class shop{
                $moneyUser = $rows['money'];
             }
         if($moneyUser >= $cena){
+			$monU = $moneyUser - $cena;
+			$db->query("UPDATE `1234`.`users` SET `money` = '$monU' WHERE login = '$user'");
+			$db->query("INSERT INTO SoldText SET bayer ='$user',id_text='$textId'");
             echo "Успешно куплено!";
         }
         else{
