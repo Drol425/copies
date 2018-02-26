@@ -1,18 +1,18 @@
 <?php
+include  ('class/aut.class.php');
+switch ($_GET['mid']){
+
+default:
+
 include  ('class/header.class.php');
 ?>
 <br />
 <br />
 <br />
 <br />
-<?php
 
-switch ($_GET['mid']){
-
-default:
-?>
 <div style="text-align: center;">
-	<form action="reg.php?mid=aut" method="POST">
+	<form action="login.php?mid=aut" method="POST">
 		Email:<br /> <input name="email" size="40" type="text"><br /><br />
 		Пароль:<br /> <input name="password" size="40" type="password"><br /><br />
 		<input name="subm" value="Войти" type="submit">
@@ -25,6 +25,8 @@ break;
 case 'aut':
 	
 	//$user and $password md5 с базы данных вывод по емаилу юзера
+	$obj = new UserAut();
+	$pass = $obj ->aut($_POST['email']);
 	
 	if($pass != md5($_POST['password'])){
 		echo "Извините, но данный пользователь зарегестрирован!<br />";
@@ -32,7 +34,9 @@ case 'aut':
 		break;
 	}
 	else{
-		echo "Успешно авторизировались. <a href='enter.php'>Войти</a><br />";
+		session_start();
+		 $_SESSION['login']=$_POST['email'];
+		echo "Успешно авторизировались . <a href='enter.php'>Войти,</a><br />".$_SESSION['login'];
 	}
 	
 break;
