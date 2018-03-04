@@ -36,6 +36,7 @@ case 'aut':
 	else{
 		session_start();
 		 $_SESSION['login']=$_POST['email'];
+		 $_SESSION['password']=$_POST['password'];
 		echo "Успешно авторизировались . <a href='enter.php'>Войти,</a><br />".$_SESSION['login'];
 	}
 	

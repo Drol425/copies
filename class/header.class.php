@@ -68,5 +68,8 @@
         </div>
     </header><!--//header-->
 <?php
-    $user = 'Drol';
+	if($_SESSION['login'] AND $_SESSION['password']){
+		$user = $_SESSION['login'];
+		$password = $_SESSION['password'];
+	}
 ?>
